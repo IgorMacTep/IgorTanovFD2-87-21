@@ -1,0 +1,60 @@
+.ANKETA{
+    border: 2px solid blue;
+    height: 20px;
+    width: 170px;
+    text-align: center;
+    margin:auto;
+    border-radius: 10px;
+    
+}
+.ANKETA:hover{
+    background-color: blueviolet;
+}
+.ANKETA a{
+    color: red
+}
+.TREESUM{
+    border: 2px solid blue;
+    height: 20px;
+    width: 170px;
+    text-align: center;
+    margin:auto;
+    border-radius: 10px;
+    
+}
+.TREESUM:hover{
+    background-color: blueviolet;
+}
+.TREESUM a{
+    color: red
+}
+.VOWELS{
+    border: 2px solid blue;
+    height: 20px;
+    width: 170px;
+    text-align: center;
+    margin:auto;
+    border-radius: 10px;
+    
+}
+.VOWELS:hover{
+    background-color: blueviolet;
+}
+.VOWELS a{
+    color: red
+}
+.DRINK_HASH_FUNC{
+    border: 2px solid blue;
+    height: ;
+    width: 170px;
+    text-align: center;
+    margin:auto;
+    border-radius: 10px;
+    
+}
+.DRINK_HASH_FUNC:hover{
+    background-color: blueviolet;
+}
+.DRINK_HASH_FUNC a{
+    color: red
+}

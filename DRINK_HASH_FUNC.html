@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DRINK_HASH_FUNC</title>
+</head>
+<body>
+    <button onclick="drinkInform()">Enter information about drink</button>
+    <button onclick="getInform()">Info about drink</button>
+    <button onclick="listdrinks()">List drinks</button>
+    <button onclick="delDrink()" >Delete drink</button>
+    <script>
+    "use strict"
+    function delDrink(){
+        drinkStorage.deleteValue(prompt("enter drink"));
+    }
+    function listdrinks(){
+        alert(drinkStorage.getKeys().join(", "))
+    }
+    function getInform(){
+        let key=prompt("enter drink name");
+       let getinfo=drinkStorage.getValue(key);
+       alert(`drink:${key}
+       alcohol?:${getinfo.alc?"yes":"no"}
+       reciept:${getinfo.rec}`)
+    }
+    function drinkInform(){
+        let key=prompt("enter drink name");
+        let rec=prompt("enter reciept");
+        let alc=confirm("this drink is alc?");
+drinkStorage.addValue(key,{'rec':rec,"alc":alc})
+    }
+    let key=null;
+    let value=null;
+    let data={}
+    
+   function HashStorageFunc() {
+       
+
+    this.addValue=function(key,value){
+        data[key]=value
+        
+    } 
+    this.getValue=function(key){
+        return(data[key])
+    }
+    this.deleteValue=function(key){
+        
+       return data[key]==undefined?false:delete data[key]
+        
+    }
+    this.getKeys=function(){
+        return Object.keys(data)
+
+    }
+    
+   } 
+   let drinkStorage=new HashStorageFunc();
+
+
+  
+    </script>
+</body>
+</html>

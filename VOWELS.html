@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VOWELS</title>
+</head>
+<body>
+    <script>
+    "use strict"
+    var arr=["у","е","ы","а","о","э","я","и","ю","e","y","u","i","o","a"];
+    var res=prompt("Enter something!!!").toLowerCase();
+    let lenghtRes=res.length;
+    let resoult=null;
+    let k=null;
+    let i=null;
+for (i=0;i<lenghtRes;i++)
+{
+    for (k=0;k<arr.length;k++)
+    {
+        if (arr[k]==res[i])
+        {
+            resoult+=+1
+        }
+        else {
+            resoult+=+0
+        }
+
+    }
+}
+alert(`Vowels nuber is:${resoult}`)
+    </script>
+</body>
+</html>

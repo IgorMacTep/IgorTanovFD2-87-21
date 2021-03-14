@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANKETA</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        let fio=prompt("Enter your FIO");
+        let age=prompt("Eter u age in year");
+        let sex=confirm("Your sex is man?");
+         fio=fio.trim();
+         let fioo=fio.split(' ');
+        alert(`Your FIO:${fioo.length===3?fio:"Enter your fio corectly"}
+        Your age in year:${parseInt(age)==age?age:"Enter your age corectly"}
+        Your age in days:${age*365}
+        After 5 years your age will be:${Number(age)+5}
+        Your sex is:${sex==true?"Yes":"No"}
+        Are you retired?:${age<=65?"no":"yes"}`);
+       
+
+    </script>
+</body>
+</html>
